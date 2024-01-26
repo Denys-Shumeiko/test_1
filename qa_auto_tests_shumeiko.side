@@ -1,0 +1,425 @@
+{
+  "id": "a2f5e646-7598-4d41-8c52-6cf0ca3c1785",
+  "version": "2.0",
+  "name": "qa_auto_tests_shumeiko",
+  "url": "https://qauto.forstudy.space",
+  "tests": [{
+    "id": "2fa04388-2e91-405c-8a6c-7769374fdc07",
+    "name": "last_dz",
+    "commands": [{
+      "id": "44804441-a41d-44da-8f5d-851ea029585b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1de340c3-d796-4fff-b44e-ffb7473f78e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0466eb36-3444-4938-82b4-fd1d881bab6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hero-descriptor_btn",
+      "targets": [
+        ["css=.hero-descriptor_btn", "css:finder"],
+        ["xpath=//div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1087ff7a-c4c4-40e5-ac76-bbe4b6d2b60d",
+      "comment": "",
+      "command": "type",
+      "target": "id=signupName",
+      "targets": [
+        ["id=signupName", "id"],
+        ["name=name", "name"],
+        ["css=#signupName", "css:finder"],
+        ["xpath=//input[@id='signupName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "zxc"
+    }, {
+      "id": "396c19bc-c24e-473e-bd44-9af71c079170",
+      "comment": "",
+      "command": "type",
+      "target": "id=signupLastName",
+      "targets": [
+        ["id=signupLastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#signupLastName", "css:finder"],
+        ["xpath=//input[@id='signupLastName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "zxc"
+    }, {
+      "id": "c067aa2b-d67f-4fd7-bd2b-bc6497c5f861",
+      "comment": "",
+      "command": "type",
+      "target": "id=signupEmail",
+      "targets": [
+        ["id=signupEmail", "id"],
+        ["name=email", "name"],
+        ["css=#signupEmail", "css:finder"],
+        ["xpath=//input[@id='signupEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "zxc@zxc.com"
+    }, {
+      "id": "70e74f68-1bf0-419b-a1d1-1e146c7fa7ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=signupPassword",
+      "targets": [
+        ["id=signupPassword", "id"],
+        ["name=password", "name"],
+        ["css=#signupPassword", "css:finder"],
+        ["xpath=//input[@id='signupPassword']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Qwerty12"
+    }, {
+      "id": "4d207cbe-11f0-47fa-86fa-86780374619f",
+      "comment": "",
+      "command": "type",
+      "target": "id=signupRepeatPassword",
+      "targets": [
+        ["id=signupRepeatPassword", "id"],
+        ["name=repeatPassword", "name"],
+        ["css=#signupRepeatPassword", "css:finder"],
+        ["xpath=//input[@id='signupRepeatPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Qwerty12"
+    }, {
+      "id": "e45e33c7-0b01-493a-976b-e671e4e70bdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6071f2f1-08cc-4e64-9f29-e3d115c79802",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//*[@id='userNavDropdown']",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "7e34f35e-dfd1-4dfd-9465-95ecb13d6157",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id='userNavDropdown']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7af4b916-4f20-4de7-a7ed-d89c741f3e30",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profile",
+      "targets": [
+        ["linkText=Profile", "linkText"],
+        ["css=.-profile", "css:finder"],
+        ["xpath=(//a[contains(text(),'Profile')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/profile')])[2]", "xpath:href"],
+        ["xpath=//div/div/nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38e8bcca-c44b-4dc1-8e6d-bb428cb0adff",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//div[@class='profile d-flex flex-column align-items-center']",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "201691ee-aa2c-4c71-b77f-05ef9f668603",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//div[@class='profile d-flex flex-column align-items-center']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19fd6c86-9551-4069-8ee6-9f25186ac246",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sidebar > .btn:nth-child(1)",
+      "targets": [
+        ["css=.sidebar > .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Garage')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/garage')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98c27c67-15a9-40da-855c-5705362f297c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83b6076a-f89b-4d65-9aac-47243c8814c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarBrand",
+      "targets": [
+        ["id=addCarBrand", "id"],
+        ["name=carBrandId", "name"],
+        ["css=#addCarBrand", "css:finder"],
+        ["xpath=//select[@id='addCarBrand']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4b19270-0a9e-4529-8fea-205f676f82ae",
+      "comment": "",
+      "command": "select",
+      "target": "id=addCarBrand",
+      "targets": [],
+      "value": "label=Porsche"
+    }, {
+      "id": "f2de39e1-bf0c-4495-b9ea-dcf6c931fd81",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarModel",
+      "targets": [
+        ["id=addCarModel", "id"],
+        ["name=carModelId", "name"],
+        ["css=#addCarModel", "css:finder"],
+        ["xpath=//select[@id='addCarModel']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "084c3ce5-093d-4f05-8f8d-fae7ad559bf5",
+      "comment": "",
+      "command": "select",
+      "target": "id=addCarModel",
+      "targets": [],
+      "value": "label=Panamera"
+    }, {
+      "id": "486428ce-fdd7-40ab-819b-5aad4d642de7",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef243ee-c97c-4cab-9421-6566645262d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=addCarMileage",
+      "targets": [],
+      "value": "100"
+    }, {
+      "id": "34e03de0-484c-4980-9038-622eb810317b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "id=addCarMileage.focus()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f7be4b7-b4fb-4aeb-a49d-bfdddc6440a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20b1858f-ec1f-4cd3-baab-ff3333b5c024",
+      "comment": "",
+      "command": "click",
+      "target": "css=.car_add-expense",
+      "targets": [
+        ["css=.car_add-expense", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Add fuel expense')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6e375ec-35ec-495b-b95f-c8049a35b160",
+      "comment": "",
+      "command": "type",
+      "target": "id=addExpenseMileage",
+      "targets": [
+        ["id=addExpenseMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addExpenseMileage", "css:finder"],
+        ["xpath=//input[@id='addExpenseMileage']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "120"
+    }, {
+      "id": "bf762b62-355e-4c3e-8611-1255558d649d",
+      "comment": "",
+      "command": "click",
+      "target": "id=addExpenseLiters",
+      "targets": [
+        ["id=addExpenseLiters", "id"],
+        ["name=liters", "name"],
+        ["css=#addExpenseLiters", "css:finder"],
+        ["xpath=//input[@id='addExpenseLiters']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09f6fbbd-332c-4cc2-9a90-f098282905b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=addExpenseLiters",
+      "targets": [
+        ["id=addExpenseLiters", "id"],
+        ["name=liters", "name"],
+        ["css=#addExpenseLiters", "css:finder"],
+        ["xpath=//input[@id='addExpenseLiters']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "f3d81e62-f891-4740-bee9-84e452d55dfd",
+      "comment": "",
+      "command": "click",
+      "target": "id=addExpenseTotalCost",
+      "targets": [
+        ["id=addExpenseTotalCost", "id"],
+        ["name=totalCost", "name"],
+        ["css=#addExpenseTotalCost", "css:finder"],
+        ["xpath=//input[@id='addExpenseTotalCost']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28d3ebce-29d5-4079-8956-816a662d9514",
+      "comment": "",
+      "command": "type",
+      "target": "id=addExpenseTotalCost",
+      "targets": [
+        ["id=addExpenseTotalCost", "id"],
+        ["name=totalCost", "name"],
+        ["css=#addExpenseTotalCost", "css:finder"],
+        ["xpath=//input[@id='addExpenseTotalCost']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "9571ff27-2e70-401e-91bd-9293d92b0f6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer",
+      "targets": [
+        ["css=.modal-footer", "css:finder"],
+        ["xpath=//app-add-expense-modal/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87566816-46e6-4f26-93a5-de3666d5c7bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7497a443-df0e-41a5-a3c8-5c5cbfd1a497",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//th[@_ngcontent-jqn-c79 and contains(text(), 'Total cost')]",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "151fc415-27fa-4519-b4c0-36365ae60e48",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//th[@_ngcontent-jqn-c79 and contains(text(), 'Total cost')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd2d21b1-5fa2-47c2-8a53-93bb65424f33",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Settings",
+      "targets": [
+        ["linkText=Settings", "linkText"],
+        ["css=.sidebar_btn-group > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Settings')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/settings')])[2]", "xpath:href"],
+        ["xpath=//div/div/nav/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99adf585-3174-4029-b0f7-f7aa54a1db7d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//div [@class='user-settings_item -form -change-email']",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "658e3a43-4b53-4dea-9672-f648ec63778f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//div [@class='user-settings_item -form -change-email']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae340418-0618-43d7-8e9c-3641ab48e8bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger-bg",
+      "targets": [
+        ["css=.btn-danger-bg", "css:finder"],
+        ["xpath=//div[5]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove my account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba60a6bc-a0ed-4aa1-88e1-aec5050cf7b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "64f38163-fe3b-42b9-bef6-ec7a0a449a08",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2fa04388-2e91-405c-8a6c-7769374fdc07"]
+  }],
+  "urls": ["https://qauto.forstudy.space/"],
+  "plugins": []
+}
