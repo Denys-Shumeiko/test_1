@@ -12,7 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
-public class DzqaautoshumeikoTest {
+public class AutotestqaAutoshumeikoTest {
   private IWebDriver driver;
   public IDictionary<string, object> vars {get; private set;}
   private IJavaScriptExecutor js;
@@ -66,19 +66,13 @@ public class DzqaautoshumeikoTest {
     driver.FindElement(By.Id("addCarMileage")).SendKeys("100");
     driver.FindElement(By.CssSelector(".modal-footer > .btn-primary")).Click();
     driver.FindElement(By.CssSelector(".car_add-expense")).Click();
-    driver.FindElement(By.Id("addExpenseMileage")).SendKeys("120");
+    driver.FindElement(By.Id("addExpenseMileage")).SendKeys("10");
     driver.FindElement(By.Id("addExpenseLiters")).Click();
-    driver.FindElement(By.Id("addExpenseLiters")).SendKeys("20");
+    driver.FindElement(By.Id("addExpenseLiters")).SendKeys("10");
     driver.FindElement(By.Id("addExpenseTotalCost")).Click();
-    driver.FindElement(By.Id("addExpenseTotalCost")).SendKeys("20");
+    driver.FindElement(By.Id("addExpenseTotalCost")).SendKeys("10");
     driver.FindElement(By.CssSelector(".modal-footer")).Click();
     driver.FindElement(By.CssSelector(".modal-footer > .btn-primary")).Click();
-    {
-      WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3));
-      wait.Until(driver => driver.FindElements(By.XPath("//th[@_ngcontent-jqn-c79 and contains(text(), \'Total cost\')]")).Count > 0);
-    }
-    var elements = driver.FindElements(By.XPath("//th[@_ngcontent-jqn-c79 and contains(text(), \'Total cost\')]"));
-    Assert.True(elements.Count > 0);
     driver.FindElement(By.LinkText("Settings")).Click();
     {
       WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3));

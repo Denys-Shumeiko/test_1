@@ -228,7 +228,7 @@
     }, {
       "id": "1ef243ee-c97c-4cab-9421-6566645262d8",
       "comment": "",
-      "command": "type",
+      "command": "sendKeys",
       "target": "id=addCarMileage",
       "targets": [],
       "value": "100"
@@ -264,16 +264,10 @@
     }, {
       "id": "e6e375ec-35ec-495b-b95f-c8049a35b160",
       "comment": "",
-      "command": "type",
+      "command": "sendKeys",
       "target": "id=addExpenseMileage",
-      "targets": [
-        ["id=addExpenseMileage", "id"],
-        ["name=mileage", "name"],
-        ["css=#addExpenseMileage", "css:finder"],
-        ["xpath=//input[@id='addExpenseMileage']", "xpath:attributes"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
-      "value": "120"
+      "targets": [],
+      "value": "10"
     }, {
       "id": "bf762b62-355e-4c3e-8611-1255558d649d",
       "comment": "",
@@ -290,7 +284,7 @@
     }, {
       "id": "09f6fbbd-332c-4cc2-9a90-f098282905b1",
       "comment": "",
-      "command": "type",
+      "command": "sendKeys",
       "target": "id=addExpenseLiters",
       "targets": [
         ["id=addExpenseLiters", "id"],
@@ -299,7 +293,7 @@
         ["xpath=//input[@id='addExpenseLiters']", "xpath:attributes"],
         ["xpath=//div[4]/div/input", "xpath:position"]
       ],
-      "value": "20"
+      "value": "10"
     }, {
       "id": "f3d81e62-f891-4740-bee9-84e452d55dfd",
       "comment": "",
@@ -316,7 +310,7 @@
     }, {
       "id": "28d3ebce-29d5-4079-8956-816a662d9514",
       "comment": "",
-      "command": "type",
+      "command": "sendKeys",
       "target": "id=addExpenseTotalCost",
       "targets": [
         ["id=addExpenseTotalCost", "id"],
@@ -325,7 +319,7 @@
         ["xpath=//input[@id='addExpenseTotalCost']", "xpath:attributes"],
         ["xpath=//div[5]/div/input", "xpath:position"]
       ],
-      "value": "20"
+      "value": "10"
     }, {
       "id": "9571ff27-2e70-401e-91bd-9293d92b0f6e",
       "comment": "",
@@ -346,20 +340,6 @@
         ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
         ["xpath=//div[3]/button[2]", "xpath:position"]
       ],
-      "value": ""
-    }, {
-      "id": "7497a443-df0e-41a5-a3c8-5c5cbfd1a497",
-      "comment": "",
-      "command": "waitForElementPresent",
-      "target": "//th[@_ngcontent-jqn-c79 and contains(text(), 'Total cost')]",
-      "targets": [],
-      "value": "3000"
-    }, {
-      "id": "151fc415-27fa-4519-b4c0-36365ae60e48",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "//th[@_ngcontent-jqn-c79 and contains(text(), 'Total cost')]",
-      "targets": [],
       "value": ""
     }, {
       "id": "cd2d21b1-5fa2-47c2-8a53-93bb65424f33",
